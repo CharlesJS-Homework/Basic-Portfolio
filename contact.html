@@ -3,22 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact</title>
+        <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div id="contact_box">
+        <header id="top_header">
+            <ul class="nav_bar">
+                <li class="name_box"><h1>Charles Srstka</h1></li>
+                <li>
+                    <ul class="nav_bar">
+                        <li class="nav_item"><a class="nav_anchor" href="index.html">About</a></li>
+                        <li class="nav_sep">|</li>
+                        <li class="nav_item"><a class="nav_anchor" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav_sep">|</li>
+                        <li class="nav_item"><a class="nav_anchor" href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <section class="content_box">
             <h2>Contact</h2>
             <hr />
             <form>
-                <h3 class="form_header">Name</h3>
-                <input type="text" name="name" />
-                <h3 class="form_header">Email</h3>
-                <input type="text" name="email" />
-                <h3 class="form_header">Message</h3>
-                <input type="text" name="message" class="message_input" />
+                <label>Name</label>
+                <br />
+                <input type="text" name="name" value="John Smith" />
+                <br />
+                <label>Email</label>
+                <br />
+                <input type="text" name="email" value="example@gmail.com" />
+                <br />
+                <label>Message</label>
+                <br />
+                <textarea name="message" rows=8></textarea>
                 <br />
                 <input type="submit" value="Submit" />
             </form>
-        </div>
+        </section>
+        <div class="footer_spacer"></div>
+        <footer class="content_footer">
+            Copyright &copy; 2018 Charles Srstka. All rights reserved.
+        </footer>
     </body>
 </html>
